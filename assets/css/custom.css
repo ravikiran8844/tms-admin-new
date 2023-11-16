@@ -9,8 +9,9 @@
 .login-page_wrapper .carousel img{
     width: 100%;
     height: 100%;
+    max-height: 100vh;
     object-fit: cover;
-    border-radius: 0px 0px 100px 100px;
+    /* border-radius: 0px 0px 100px 100px; */
     filter: brightness(0.95);
 }
 .login-content_wrapper{
@@ -23,7 +24,6 @@
     height: 48px;
     flex-shrink: 0;
     color: #ADADAD;
-    max-width: 352px;
 
     
 }
@@ -49,10 +49,36 @@
     background: #F78D1E;
     color: #fff;
     width: 100%;
-    max-width: 352px;
     font-weight: 600;
     height: 52.237px;
+    
 }
 .carousel-control-prev,.carousel-control-next{
     display: none;
+}
+
+.login-page_wrapper hr{
+    border-top: 1px solid #E4E4E4;
+    opacity: 1;
+}
+
+
+/* login verify page */
+
+.otp-inputs input{
+    border-radius: 5px;
+    border: 1px solid #E4E4E4;
+    background: #FFF;
+    box-shadow: 0px 0px 17px 0px #F3F3F3;
+    width: 58px;
+    height: 58px;
+    flex-shrink: 0;
+    text-align: center;
+    color: #4B4A4A;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 16px */
+    margin-right: 10px;
 }

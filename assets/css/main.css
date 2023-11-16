@@ -2711,8 +2711,8 @@ h6,
 .header .header-left .header-search form input {
   width: 100%;
   border: 1px solid #efefef;
-  background: rgba(239, 239, 239, 0.5);
-  border-radius: 8px;
+  border-radius: 5.831px;
+  background: #FFF;
   padding: 10px 10px 10px 44px;
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;

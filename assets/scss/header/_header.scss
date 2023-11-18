@@ -320,3 +320,28 @@
     }
   }
 }
+
+
+
+.header .header-left .header-search form input{
+  border-radius: 5.831px;
+  background: #FFF;
+  color: #C2C2C2;
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 100%; /* 14px */
+max-width: 405px;
+width: 300px;
+
+}
+
+.header input::placeholder{
+  color: #C2C2C2;
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 100%; /* 14px */
+}

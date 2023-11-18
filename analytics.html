@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="assets/css/materialdesignicons.min.css" />
     <link rel="stylesheet" href="assets/css/fullcalendar.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
+
   </head>
   <body>
     <!-- ======== Preloader =========== -->
@@ -145,7 +147,7 @@
                 </div>
                 <div class="header-search d-none d-md-flex">
                   <form action="#">
-                    <input type="text" placeholder="Search..." />
+                    <input type="text" placeholder="Search Reports Approval" />
                     <button><i class="lni lni-search-alt"></i></button>
                   </form>
                 </div>
@@ -329,33 +331,139 @@
       <section class="section">
         <div class="container-fluid">
           <!-- ========== title-wrapper start ========== -->
-          <div class="title-wrapper pt-30">
+          <div class="title-wrapper pt-30 mb-5">
             <div class="row align-items-center">
-              <div class="col-md-6">
-                <div class="title">
-                  <h2>Title</h2>
+              <div class="col-12 d-flex align-items-center">
+                <div class="me-3">
+                  <h2>Analytics</h2>
+                </div>
+                <div>
+                  <select class="custom-select-box" name="" id="">
+                    <option selected disabled value="">Search Reports</option>
+                    <option value="">option1</option>
+                    <option value="">option2</option>
+
+                  </select>
                 </div>
               </div>
-              <!-- end col -->
-              <div class="col-md-6">
-                <div class="breadcrumb-wrapper">
-                  <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                      <li class="breadcrumb-item">
-                        <a href="#0">Dashboard</a>
-                      </li>
-                      <li class="breadcrumb-item active" aria-current="page">
-                        Page
-                      </li>
-                    </ol>
-                  </nav>
-                </div>
-              </div>
+            
               <!-- end col -->
             </div>
             <!-- end row -->
           </div>
           <!-- ========== title-wrapper end ========== -->
+
+
+          <div class="row">
+            <div class="col-12 mb-4">
+              <div class="card analytics-page-card">
+                <div class="card-body">
+                  <h5  class="mb-3">EXPENSES</h5>
+                  <div class="mb-4 analytics-page-card_text">Gain insight into your organization’s spending by analyzing the business expenses on the basis of various parameters</div>
+
+                  <div class="row">
+                    <div class="col-12 col-sm-6 col-md-4">
+                      <ul class="list-unstyled">
+                        <li>Expense Details</li>
+                        <li>Expenses by User</li>
+                        <li>Expenses by Department</li>
+                        <li>Expenses by Project</li>
+                      </ul>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4">
+                      <ul class="list-unstyled">
+                        <li>Unsubmitted Expenses</li>
+                        <li>Milage Expenses by User</li>
+                        <li>Expenses by Attendee</li>
+                        <li>Expenses by Merchant</li>
+                      </ul>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4">
+                      <ul class="list-unstyled">
+                        <li>Expenses by Category</li>
+                        <li>Expenses policy Violations by User</li>
+                        <li>Expenses by Department</li>
+                        <li>Expenses by Project</li>
+                      </ul>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+
+
+            <div class="col-12 mb-4">
+              <div class="card analytics-page-card">
+                <div class="card-body">
+                  <h5  class="mb-3">REPORTS</h5>
+                  <div class="mb-4 analytics-page-card_text">
+                    View statistics of the expense reports in your organization and review the policy violations
+                  </div>
+
+                  <div class="row">
+                    <div class="col-12 col-sm-6 col-md-4">
+                      <ul class="list-unstyled">
+                        <li>Expense Reports Details</li>
+                       
+                      </ul>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4">
+                      <ul class="list-unstyled">
+                        <li>Policy Violations</li>
+                       
+                      </ul>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4">
+                      <ul class="list-unstyled">
+                        <li>Time Taken for Approval</li>
+                       
+                      </ul>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+
+
+            <div class="col-12 mb-4">
+              <div class="card analytics-page-card">
+                <div class="card-body">
+                  <h5  class="mb-3">REIMBURSEMENTS</h5>
+                  <div class="mb-4 analytics-page-card_text">Analyze the reimbursements processed by your organization and the advances paid to your employees</div>
+
+                  <div class="row">
+                    <div class="col-12 col-sm-6 col-md-4">
+                      <ul class="list-unstyled">
+                        <li>Reimbursement details</li>
+                        <li>Advances by User</li>
+                      </ul>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4">
+                      <ul class="list-unstyled">
+                        <li>Reimbursements by User</li>
+                        
+                      </ul>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4">
+                      <ul class="list-unstyled">
+                        <li>Awaiting Reimbursements by User</li>
+                      
+                      </ul>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
         </div>
         <!-- end container -->
       </section>

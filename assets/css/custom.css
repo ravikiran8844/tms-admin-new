@@ -301,3 +301,42 @@ line-height: normal;
     border-radius: 4px;
 border: 1px solid #ECECEC;
 }
+
+
+.analytics-page-card{
+    border-radius: 7px;
+border: 1px solid #D9D9D9;
+background: #FFF;
+box-shadow: 0px 0px 22px 0px rgba(201, 201, 201, 0.25);
+}
+
+.analytics-page-card ul li{
+    color: #2D2D2D;
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 265.5%; /* 37.17px */
+}
+.analytics-page-card_text{
+    color: #7A7A7A;
+font-family: Poppins;
+font-size: 13px;
+font-style: normal;
+font-weight: 400;
+line-height: 100%; /* 13px */
+}
+
+
+.custom-select-box{
+    width: 233px;
+height: 37px;
+flex-shrink: 0;
+border-radius: 5.831px;
+border: 1px solid #ECECEC;
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 100%; /* 14px */
+}

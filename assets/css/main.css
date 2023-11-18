@@ -3959,6 +3959,14 @@ h6,
   justify-content: center;
 }
 
+.nav-item:not(.active):hover .text {
+  color: #F78D1E;
+}
+
+.nav-item:not(.active):hover .icon svg {
+  color: #F78D1E;
+}
+
 .nav-item.active {
   border-radius: 3px;
   background: #F78D1E;

@@ -355,26 +355,39 @@
 
 
 
-.nav-item.active{
-  border-radius: 3px;
-  background: #F78D1E;
-}
 
-.nav-item.active .icon svg{
-color: #fff;
-}
-.nav-item.active .text{
+  
+  
+  .nav-item:not(.active):hover .text{
+    color: #F78D1E;
+
+  }
+
+  .nav-item:not(.active):hover .icon svg{
+    color: #F78D1E;
+
+  }
+
+  .nav-item.active{
+    border-radius: 3px;
+    background: #F78D1E;
+  }
+  
+  .nav-item.active .icon svg{
   color: #fff;
   }
-
-  .nav-item .text{
-    color: #6C6C6C;
-  }
-
-  .nav-item .icon svg{
-    color: #6C6C6C;
-  }
-
-  .nav-item{
-    margin: 10px;
-  }
+  .nav-item.active .text{
+    color: #fff;
+    }
+  
+    .nav-item .text{
+      color: #6C6C6C;
+    }
+  
+    .nav-item .icon svg{
+      color: #6C6C6C;
+    }
+  
+    .nav-item{
+      margin: 10px;
+    } 

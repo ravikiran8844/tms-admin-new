@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+}
 .text-black{
     color: #000;
 }
@@ -81,4 +85,176 @@
     font-weight: 500;
     line-height: 100%; /* 16px */
     margin-right: 10px;
+}
+
+
+
+/* admin dashboard */
+.dashboard-cards{
+    border-radius: 10px;
+    border: 1px solid #ECECEC;
+    background: #F1F2F6;
+    padding: 20px;
+}
+.dashboard-cards .icon{
+    width: 42.251px;
+    height: 42.251px;
+    border-radius: 10.406px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboard-cards .card h6{
+    color: #6C6C6C;
+    font-family: Poppins;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  
+}
+
+.dashboard-cards .card select{
+    border-radius: 3.604px;
+    background: #F1F2F6;   
+    border: none;
+    outline: none;
+    color: #212121;
+    font-family: Poppins;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.dashboard-cards .card h3{
+    color: #313131;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 20px */
+}
+
+
+
+.dashboard-cards .icon-1--bg{
+    background-color: #FFEBE0;
+}
+.dashboard-cards .icon-2--bg{
+    background-color: #E4EBFE;
+}
+.dashboard-cards .icon-3--bg{
+    background-color: #D9F3FC;
+}
+.dashboard-cards .icon-4--bg{
+    background-color: #E1F8F0;
+}
+.dashboard-cards .icon-5--bg{
+    background-color: #F0F5E7;
+}
+
+
+
+table.dataTable.no-footer {
+    padding: 20px 0;
+    border-bottom: none !important;
+}
+
+
+.custom-dropdown .dropdown-toggle::after {
+    display: inline-block;
+    margin-left: unset;
+    vertical-align: unset;
+    content: "";
+    border-top: none;
+    border-right: none;
+    border-bottom: 0;
+    border-left: none; 
+}
+.custom-dropdown button,.custom-dropdown button:hover{
+    background-color: transparent !important;
+    border: 1px solid #CECECE;
+    padding: 5px 10px;
+}
+
+.custom-orange-link{
+    color: #F78D1E !important;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.custom-orange-link svg{
+    fill: #F78D1E !important;
+}
+
+.text-orange{
+    color: #F78D1E !important;
+}
+.btn-orange,.btn-orange:hover{
+    background-color: #F78D1E !important;
+    color: #FFF !important;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 13px */
+    height: 36px;
+
+}
+.btn-orange svg{
+    fill: #fff !important;
+}
+.table td p{
+    color: #000;
+}
+
+
+.custom-modal .modal-header{
+border-radius: 12px 12px 0px 0px;
+background: #F1F2F6;
+}
+
+.custom-modal .modal-footer{
+
+    justify-content: flex-start !important;
+}
+
+
+.custom-modal label{
+    color: #2D2D2D;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 14px */
+}
+
+.custom-modal label span{
+    color: #F00;
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 100%;
+}
+
+
+.custom-modal input,.custom-modal select{
+    border-radius: 5px;
+    border: 1px solid #DDD !important;
+    background: #F1F2F6 !important;
+    color: #2D2D2D;
+    font-family: Poppins;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 13px */
+    height: 50px;
+
 }

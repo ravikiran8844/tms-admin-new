@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="../assets/images/favicon.svg" type="image/x-icon" />
-    <title>Pending Trips - User Dashboard | Emerald TMS</title>
+    <title>Settings - User Dashboard | Emerald TMS</title>
 
     <!-- ========== All CSS files linkup ========= -->
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
@@ -63,10 +63,10 @@
                     </a>
                     <ul id="ddmenu_1" class="collapse dropdown-nav">
                         <li>
-                            <a href="new-trips.html"> New Trips </a>
+                            <a class="active" href="new-trips.html"> New Trips </a>
                         </li>
                         <li>
-                            <a class="active" href="pending-trips.html"> Pending Trips </a>
+                            <a href="pending-trips.html"> Pending Trips </a>
                         </li>
                         <li>
                             <a href="all-trips.html"> All Trips </a>
@@ -393,195 +393,114 @@
         <section class="section">
             <div class="container-fluid">
                 <!-- ========== title-wrapper start ========== -->
-                <div class="title-wrapper pt-30 mb-4">
+                <div class="title-wrapper pt-30">
                     <div class="row align-items-center">
-                        <div class="col-12 d-flex justify-content-between flex-wrap">
+                        <div class="col-12 mb-5">
                             <div>
-                                <h2>Pending Trips</h2>
-                            </div>
-
-                            <div class="right">
-                                <a href="new-trips.html">
-                                <button class="btn btn-orange"><span>
-                                        <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"
-                                            viewBox="0 0 24 24">
-                                            <title>plus-circle</title>
-                                            <path
-                                                d="M17,13H13V17H11V13H7V11H11V7H13V11H17M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z">
-                                            </path>
-                                        </svg>
-                                    </span> New Trip</button>
-                                </a>
+                                <h2>Basic Information</h2>
                             </div>
                         </div>
 
                         <!-- end col -->
+
+                        <div class="col-12 mb-5">
+                            <div class="card">
+                                <div class="card-header py-3">
+                                    <h4>PERSONAL DETAILS</h4>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-6">
+                                            <div class="d-flex mb-4">
+                                                <div class="settings-page-item-label">Name</div>
+                                                <div class="settings-page-item-text"></div>
+                                            </div>
+                                            <div class="d-flex mb-4">
+                                                <div class="settings-page-item-label">Email Address</div>
+                                                <div class="settings-page-item-text"></div>
+                                            </div>
+                                            <div class="d-flex mb-4">
+                                                <div class="settings-page-item-label">Employee ID</div>
+                                                <div class="settings-page-item-text"></div>
+                                            </div>
+                                            <div class="d-flex mb-4">
+                                                <div class="settings-page-item-label">Mobile</div>
+                                                <div class="settings-page-item-text"></div>
+                                            </div>
+                                            <div class="d-flex mb-4">
+                                                <div class="settings-page-item-label">Department</div>
+                                                <div class="settings-page-item-text"></div>
+                                            </div>
+                                            <div class="d-flex mb-4">
+                                                <div class="settings-page-item-label">Date of Joining</div>
+                                                <div class="settings-page-item-text"></div>
+                                            </div>
+                                            <div class="d-flex mb-4">
+                                                <div class="settings-page-item-label">Date of Birth</div>
+                                                <div class="settings-page-item-text"></div>
+                                            </div>
+                                            <div class="d-flex mb-4">
+                                                <div class="settings-page-item-label">Designation</div>
+                                                <div class="settings-page-item-text"></div>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-12 col-lg-6">
+                                            <div class="d-flex mb-4">
+                                                <div class="settings-page-item-label">Role Name</div>
+                                                <div class="settings-page-item-text"></div>
+                                            </div>
+                                            <div class="d-flex mb-4">
+                                                <div class="settings-page-item-label">Submits To</div>
+                                                <div class="settings-page-item-text"></div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <hr>
+
+                        <div class="col-12 mt-5">
+
+                            <div class="card">
+                                <div class="card-header py-3">
+                                    <h4>TRAVEL PROFILE</h4>
+                                </div>
+                                <div class="card-body">
+                                    <div class="mb-3 fs-5">Add details such as name (as in your passport), work phone, and address so that
+                                        your travel team can use these details to make bookings for your business trips.</div>
+
+                                    <div class="mb-4">
+                                        <a class="text-orange fs-6 fw-semibold" href="#">Learn More <span><svg width="4" height="8" viewBox="0 0 4 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.76037 4.72962C3.83366 4.65254 3.89413 4.54508 3.93606 4.41741C3.97799 4.28975 4 4.14608 4 4C4 3.85392 3.97799 3.71025 3.93606 3.58259C3.89413 3.45492 3.83366 3.34746 3.76037 3.27038L0.778257 0.130268C0.70139 0.0492305 0.613147 0.00436685 0.522626 0.000303246C0.432106 -0.00376036 0.342583 0.0331225 0.263287 0.107149C0.183991 0.181175 0.11779 0.289668 0.0715098 0.421441C0.0252298 0.553214 0.000544842 0.703499 -3.12239e-07 0.856805L-3.74521e-08 7.1432C0.00054513 7.2965 0.0252301 7.44679 0.0715102 7.57856C0.11779 7.71033 0.183991 7.81883 0.263287 7.89285C0.342584 7.96688 0.432106 8.00376 0.522627 7.9997C0.613147 7.99563 0.70139 7.95077 0.778258 7.86973L3.76037 4.72962Z" fill="#F78D1E"/>
+                                            </svg>
+                                            </span></a>
+                                    </div>
+
+                                    <hr>
+
+                                    <div class="mt-4">
+                                        <button class="btn orange-light-bg-btn">+ Add Travel Profile</button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
                     </div>
                     <!-- end row -->
                 </div>
                 <!-- ========== title-wrapper end ========== -->
 
                 <!-- End Row -->
-
-                <div class="row">
-
-                    <div class="col-12 mb-5">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-12 mb-4 mb-lg-0 col-lg-3">
-                                        <div class="trips_inner-card">
-                                            <div class="mb-3">Trip-00018</div>
-                                            <div class="mb-3 text-blue">Meeting with prospect (zain pvt.ltd,..)</div>
-                                            <div class="mb-3 badge rejected">REJECTED</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 text-center text-md-start mb-4 col-md-4 col-lg-3 m-md-auto ">
-                                        <div>
-                                            <div>Travel Duration</div>
-                                            <div class="text-black">01  Oct 2023 - 11 Oct 2023</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 text-center text-md-start mb-4 col-md-4 col-lg-3 m-md-auto">
-                                        <div>
-                                            <div>Destination</div>
-                                            <div class="text-black">01  Oct 2023 - 11 Oct 2023</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 text-center mb-4 col-md-4 col-lg-3 m-md-auto ">
-                                        <div >
-                                            <div>Booking Status</div>
-                                            <div class="text-black">-</div>
-                                        </div>
-                                    </div>
-
-
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-
-
-                    <div class="col-12 mb-5">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-12 mb-4 mb-lg-0 col-lg-3">
-                                        <div class="trips_inner-card">
-                                            <div class="mb-3">Trip-00018</div>
-                                            <div class="mb-3 text-blue">Meeting with prospect (zain pvt.ltd,..)</div>
-                                            <div class="mb-3 badge approved">Approved</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 text-center text-md-start mb-4 col-md-4 col-lg-3 m-md-auto ">
-                                        <div>
-                                            <div>Travel Duration</div>
-                                            <div class="text-black">01  Oct 2023 - 11 Oct 2023</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 text-center text-md-start mb-4 col-md-4 col-lg-3 m-md-auto">
-                                        <div>
-                                            <div>Destination</div>
-                                            <div class="text-black">01  Oct 2023 - 11 Oct 2023</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 text-center mb-4 col-md-4 col-lg-3 m-md-auto ">
-                                        <div >
-                                            <div>Booking Status</div>
-                                            <div class="text-black">-</div>
-                                        </div>
-                                    </div>
-
-
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-
-
-                    <div class="col-12 mb-5">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-12 mb-4 mb-lg-0 col-lg-3">
-                                        <div class="trips_inner-card">
-                                            <div class="mb-3">Trip-00018</div>
-                                            <div class="mb-3 text-blue">Meeting with prospect (zain pvt.ltd,..)</div>
-                                            <div class="mb-3 badge recalled">Recalled</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 text-center text-md-start mb-4 col-md-4 col-lg-3 m-md-auto ">
-                                        <div>
-                                            <div>Travel Duration</div>
-                                            <div class="text-black">01  Oct 2023 - 11 Oct 2023</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 text-center text-md-start mb-4 col-md-4 col-lg-3 m-md-auto">
-                                        <div>
-                                            <div>Destination</div>
-                                            <div class="text-black">01  Oct 2023 - 11 Oct 2023</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 text-center mb-4 col-md-4 col-lg-3 m-md-auto ">
-                                        <div >
-                                            <div>Booking Status</div>
-                                            <div class="text-black">-</div>
-                                        </div>
-                                    </div>
-
-
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-
-
-
-                    <div class="col-12 mb-5">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-12 mb-4 mb-lg-0 col-lg-3">
-                                        <div class="trips_inner-card">
-                                            <div class="mb-3">Trip-00018</div>
-                                            <div class="mb-3 text-blue">Meeting with prospect (zain pvt.ltd,..)</div>
-                                            <div class="mb-3 badge awaiting-approval">AWAITING APPROVAL</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 text-center text-md-start mb-4 col-md-4 col-lg-3 m-md-auto ">
-                                        <div>
-                                            <div>Travel Duration</div>
-                                            <div class="text-black">01  Oct 2023 - 11 Oct 2023</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 text-center text-md-start mb-4 col-md-4 col-lg-3 m-md-auto">
-                                        <div>
-                                            <div>Destination</div>
-                                            <div class="text-black">01  Oct 2023 - 11 Oct 2023</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 text-center mb-4 col-md-4 col-lg-3 m-md-auto ">
-                                        <div >
-                                            <div>Booking Status</div>
-                                            <div class="text-black">-</div>
-                                        </div>
-                                    </div>
-
-
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-
 
 
             </div>
@@ -623,10 +542,6 @@
     <script src="../assets/js/world-merc.js"></script>
     <script src="../assets/js/polyfill.js"></script>
     <script src="../assets/js/main.js"></script>
-
-
-
-
 
 
 </body>

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="../assets/images/favicon.svg" type="image/x-icon" />
-    <title>User Dashboard | Emerald TMS</title>
+    <title>All Advances - Approval Dashboard | Emerald TMS</title>
 
     <!-- ========== All CSS files linkup ========= -->
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
@@ -33,7 +33,7 @@
       </div>
       <nav class="sidebar-nav">
         <ul>
-          <li class="nav-item active">
+          <li class="nav-item">
             <a href="index.html">
               <span class="icon">
                 <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>view-grid</title><path d="M3,11H11V3H3M3,21H11V13H3M13,21H21V13H13M13,3V11H21V3" /></svg>
@@ -116,7 +116,7 @@
           </li>
 
 
-          <li class="nav-item nav-item-has-children">
+          <li class="nav-item nav-item-has-children active">
             <a
               href="#0"
               class="collapsed"
@@ -134,7 +134,7 @@
             </a>
             <ul id="ddmenu_3" class="collapse dropdown-nav">
               <li>
-                <a href="all-advances.html"> All Advance </a>
+                <a class="active" href="all-advances.html"> All Advance </a>
               </li>
               <li>
                 <a href="pending-advances.html"> Pending Advances </a>
@@ -146,7 +146,18 @@
           </li>
 
 
+
        
+          <li class="nav-item ">
+            <a href="reports.html">
+              <span class="icon">
+                <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>file-chart</title><path d="M13,9H18.5L13,3.5V9M6,2H14L20,8V20A2,2 0 0,1 18,22H6C4.89,22 4,21.1 4,20V4C4,2.89 4.89,2 6,2M7,20H9V14H7V20M11,20H13V12H11V20M15,20H17V16H15V20Z" /></svg>
+
+             </span>
+
+              <span class="text">Approvals</span>
+            </a>
+          </li>
 
 
           <li class="nav-item ">
@@ -370,171 +381,249 @@
       <!-- ========== section start ========== -->
       <section class="section">
         <div class="container-fluid">
-          <!-- ========== title-wrapper start ========== -->
-          <div class="title-wrapper pt-30">
-            <div class="row align-items-center">
-              <div class="col-12 d-flex justify-content-between flex-wrap">
-                <div class="title">
-                  <h2>Dashboard</h2>
-                </div>
-
-                <div class="right">
-                    <div class="select-style-1">
-                      <div class="select-position select-sm">
-                        <select class="light-bg">
-                          <option value="">Last Year</option>
-                          <option value="">This Year</option>
-                          <option value="">Last Week</option>
-                          <option value="">This Week</option>
-                        </select>
-                      </div>
+            <!-- ========== title-wrapper start ========== -->
+            <div class="title-wrapper pt-30">
+                <div class="row align-items-center">
+                    <div class="col-12 d-flex justify-content-between align-items-center flex-wrap">
+                        <div class="title me-3 mb-4">
+                            <h2>All Advances</h2>
+                        </div>
+                        <div class="mb-4">
+                            <div class="d-flex">
+                                <div class="me-2">
+                                    <button class="btn btn-orange" data-bs-toggle="modal" data-bs-target="#requestAdvanceModal"><span>
+                                        <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>plus-circle</title><path d="M17,13H13V17H11V13H7V11H11V7H13V11H17M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" /></svg>
+                                    </span> Request Advance</button>
+                                </div>
+                                <div class="dropdown custom-dropdown">
+                                    <button class="btn btn-sm btn-light dropdown-toggle" type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>dots-horizontal</title><path d="M16,12A2,2 0 0,1 18,10A2,2 0 0,1 20,12A2,2 0 0,1 18,14A2,2 0 0,1 16,12M10,12A2,2 0 0,1 12,10A2,2 0 0,1 14,12A2,2 0 0,1 12,14A2,2 0 0,1 10,12M4,12A2,2 0 0,1 6,10A2,2 0 0,1 8,12A2,2 0 0,1 6,14A2,2 0 0,1 4,12Z" /></svg>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <!-- end select -->
-                  </div>
-              </div>
-             
-              <!-- end col -->
+                </div>
+                <!-- end col -->
             </div>
             <!-- end row -->
-          </div>
-          <!-- ========== title-wrapper end ========== -->
-          <div class="row dashboard-cards mb-5 flex-xl-fill">
-            <div class="col-xxl col-lg-4 col-sm-6 p-2 p-0 dashboard-card-item">
-              <div class="card mb-30 mb-xl-0">
-             
-                <div class="card-body">
-                  <h6 class="mb-10">Total Trips</h6>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <h3 class="text-bold mb-10">120</h3>
-                  <div class="icon icon-1--bg">
-                    <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>briefcase-outline</title><path d="M20,6C20.58,6 21.05,6.2 21.42,6.59C21.8,7 22,7.45 22,8V19C22,19.55 21.8,20 21.42,20.41C21.05,20.8 20.58,21 20,21H4C3.42,21 2.95,20.8 2.58,20.41C2.2,20 2,19.55 2,19V8C2,7.45 2.2,7 2.58,6.59C2.95,6.2 3.42,6 4,6H8V4C8,3.42 8.2,2.95 8.58,2.58C8.95,2.2 9.42,2 10,2H14C14.58,2 15.05,2.2 15.42,2.58C15.8,2.95 16,3.42 16,4V6H20M4,8V19H20V8H4M14,6V4H10V6H14Z" /></svg>
-                  </div>
-                  </div>
-                </div>
-              </div>
-              <!-- End Icon Cart -->
+
+
+            <!-- Modal -->
+    <div class="custom-modal modal fade" id="requestAdvanceModal" tabindex="-1" aria-labelledby="requestAdvanceModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h2 class="modal-title fs-5" id="requestAdvanceModalLabel">Request Advance</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-       
-            <div class="col-xxl col-lg-4 col-sm-6 p-2 p-0 dashboard-card-item">
-              <div class="card mb-30 mb-xl-0">
-                
-                <div class="card-body">
-                  <div class="d-flex justify-content-between align-items-center">
-                    <h6 class="mb-10">Expenses</h6>
-                    <div class="select-position select-sm">
-                      <select class="light-bg">
-                        <option value="">Today</option>
-                        <option value="">Yesterday</option>
-                        <option value="">Last Month</option>
-                        
+            <div class="modal-body">
+            
+               
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <select class="custom-select">
+                            <option value="inr">INR</option>
+                            <option value="usd">USD</option>
+                            <!-- Add more currency options as needed -->
+                        </select>
+                    </div>
+                    <input type="text" class="form-control" placeholder="0.00">
+                </div>
+
+
+                  <div class="input-style-1">
+                    <label>Date<span>*</span></label>
+                    <input type="date">
+                  </div>
+
+               
+
+
+                <div class="select-style-1">
+                    <label>Paid Through</label>
+                    <div class="select-position">
+                      <select>
+                        <option disabled value="">Select</option>
+                        <option value="">Petty Cash</option>
+                        <option value="">Paypal</option>
+                        <option value="">Razorpay</option>
                       </select>
                     </div>
                   </div>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <h3 class="text-bold mb-10">₹5055</h3>
-                    <div class="icon icon-2--bg">
-                      <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>clipboard-list-outline</title><path d="M19 3H14.82C14.4 1.84 13.3 1 12 1S9.6 1.84 9.18 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3M12 3C12.55 3 13 3.45 13 4S12.55 5 12 5 11 4.55 11 4 11.45 3 12 3M7 7H17V5H19V19H5V5H7V7M12 17V15H17V17H12M12 11V9H17V11H12M8 12V9H7V8H9V12H8M9.25 14C9.66 14 10 14.34 10 14.75C10 14.95 9.92 15.14 9.79 15.27L8.12 17H10V18H7V17.08L9 15H7V14H9.25" /></svg>                    </div>
+
+
+                  <div class="input-style-1">
+                    <label>Reference#</label>
+                    <input type="text">
                   </div>
-                </div>
-              </div>
-              <!-- End Icon Cart -->
-            </div>
 
 
-            <div class="col-xxl col-lg-4 col-sm-6 p-2 p-0 dashboard-card-item">
-              <div class="card mb-30 mb-xl-0">
-             
-                <div class="card-body">
-                  <h6 class="mb-10">No. of Expenses</h6>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <h3 class="text-bold mb-10"><span>120</span> <span class="h6 custom-light-text">/ ₹12,000</span></h3>
-                    <div class="icon icon-3--bg">
-                      <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>receipt-text</title><path d="M3,22L4.5,20.5L6,22L7.5,20.5L9,22L10.5,20.5L12,22L13.5,20.5L15,22L16.5,20.5L18,22L19.5,20.5L21,22V2L19.5,3.5L18,2L16.5,3.5L15,2L13.5,3.5L12,2L10.5,3.5L9,2L7.5,3.5L6,2L4.5,3.5L3,2M18,9H6V7H18M18,13H6V11H18M18,17H6V15H18V17Z" /></svg>                    </div>
+                  <div class="input-style-1">
+                    <label>Notes</label>
+                    <input type="text">
                   </div>
-                </div>
-              </div>
-              <!-- End Icon Cart -->
-            </div>
 
 
-            <div class="col-xxl col-lg-4 col-sm-6 p-2 p-0 dashboard-card-item">
-              <div class="card mb-30 mb-xl-0">
-             
-                <div class="card-body">
-                  <h6 class="mb-10">Advance in Hand</h6>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <h3 class="text-bold mb-10">0/₹2000</h3>
-                    <div class="icon icon-4--bg">
-                      <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>wallet-bifold-outline</title><path d="M15.5 15.5C16.33 15.5 17 14.83 17 14C17 13.17 16.33 12.5 15.5 12.5C14.67 12.5 14 13.17 14 14C14 14.83 14.67 15.5 15.5 15.5M7 3H17C18.11 3 19 3.9 19 5V7C20.11 7 21 7.9 21 9V19C21 20.11 20.11 21 19 21H7C4.79 21 3 19.21 3 17V7C3 4.79 4.79 3 7 3M17 7V5H7C5.9 5 5 5.9 5 7V7.54C5.59 7.2 6.27 7 7 7H17M5 17C5 18.11 5.9 19 7 19H19V9H7C5.9 9 5 9.9 5 11V17Z" /></svg>                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- End Icon Cart -->
-            </div>
 
 
-            <div class="col-xxl col-lg-4 col-sm-6 p-2 p-0 dashboard-card-item">
-              <div class="card mb-30 mb-xl-0">
-             
-                <div class="card-body">
-                  <h6 class="mb-10">Pending to be Collected</h6>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <h3 class="text-bold mb-10">₹2500</h3>
-                    <div class="icon icon-5--bg">
-                      <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>timer-check-outline</title><path d="M11 8H13V14H11V8M15 1H9V3H15V1M12 20C8.13 20 5 16.87 5 13S8.13 6 12 6 19 9.13 19 13C19.7 13 20.36 13.13 21 13.35C21 13.23 21 13.12 21 13C21 10.88 20.26 8.93 19.03 7.39L20.45 5.97C20 5.46 19.55 5 19.04 4.56L17.62 6C16.07 4.74 14.12 4 12 4C7.03 4 3 8.03 3 13S7.03 22 12 22C12.59 22 13.16 21.94 13.71 21.83C13.4 21.25 13.18 20.6 13.08 19.91C12.72 19.96 12.37 20 12 20M21.34 15.84L17.75 19.43L16.16 17.84L15 19L17.75 22L22.5 17.25L21.34 15.84Z" /></svg>
+
+                  <div class="select-style-1">
+                    <label>Paid Through</label>
+                    <div class="select-position">
+                      <select>
+                        <option disabled value="">Select</option>
+                        <option value="">Option one</option>
+                        <option value="">Option two</option>
+                        <option value="">Option three</option>
+                      </select>
                     </div>
                   </div>
-                </div>
-              </div>
-              <!-- End Icon Cart -->
+
+
             </div>
-            <!-- End Col -->
-          </div>
-          <!-- End Row -->
-          <div class="row">
-            <div class="col-12">
-              <div class="card-style mb-30">
-                <div class="title d-flex flex-wrap justify-content-between">
-                  <div class="left">
-                    <h3 class="text-bold">Expense Reports</h3>
-                  </div>
-                  <div class="right d-flex">
-                    <div class="select-style-1">
-                        <div class="select-position select-sm">
-                          <select class="light-bg">
-                            <option value="">Monthly</option>
-                            <option value="">January</option>
-                            <option value="">February</option>
-
-
-                          </select>
-                        </div>
-                      </div>
-                    <div class="select-style-1 ml-15">
-                      <div class="select-position select-sm">
-                        <select class="light-bg">
-                          <option value="">Yearly</option>
-                          <option value="">2023</option>
-                          <option value="">2022</option>
-
-                        </select>
-                      </div>
-                    </div>
-                    <!-- end select -->
-                  </div>
-                </div>
-                <!-- End Title -->
-                <div class="chart">
-                  <canvas id="Chart1" style="width: 100%; height: 400px; margin-left: -35px;"></canvas>
-                </div>
-                <!-- End Chart -->
-              </div>
-            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-orange">Request Advance</button>
+            <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Cancel</button>
             
-            <!-- End Col -->
-          </div>
-          <!-- End Row -->
-       
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+            <div class="col-12">
+                <div class="card-style mb-30">
+                    <div class="table-wrapper table-responsive">
+                        <table id="myTable" class="table striped-table">
+                            <thead>
+                                <tr>
+                                 
+                                    <th>
+                                        <h6>DATE</h6>
+                                    </th>
+                                    <th>
+                                        <h6>TRIP#</h6>
+                                    </th>
+                                    <th>
+                                        <h6>REFERENCE#</h6>
+                                    </th>
+                                    <th>
+                                        <h6>AMOUNT</h6>
+                                    </th>
+                                    <th>
+                                        <h6>STATUS</h6>
+                                    </th>
+                                    <th>
+                                        <h6>APPROVER</h6>
+                                    </th>
+                                    <th>
+                                        <h6>REPORT NAME</h6>
+                                    </th>
+                                </tr>
+                                <!-- end table row-->
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <p>29 Aug 2023</p>
+                                    </td>
+                                    <td>
+                                        <p>-</p>
+                                    </td>
+                                    <td>
+                                        <p>-</p>
+                                    </td>
+                                    <td>
+                                        <p class="fw-500">Rs.5,000.00</p>
+                                    </td>
+                                    <td>
+                                        <div class="badge approved">Approved</div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="image me-2">
+                                                <img class="rounded-5" width="30" height="30" src="../assets/images/profile/profile-image.png" alt="">
+                                            </div>
+                                       
+                                            <p>Vinoth Kumar</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p>-</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>29 Aug 2023</p>
+                                    </td>
+                                    <td>
+                                        <p>-</p>
+                                    </td>
+                                    <td>
+                                        <p>-</p>
+                                    </td>
+                                    <td>
+                                        <p class="fw-500">Rs.5,000.00</p>
+                                    </td>
+                                    <td>
+                                        <div class="badge rejected">REJECTED</div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="image me-2">
+                                                <img class="rounded-5" width="30" height="30" src="../assets/images/profile/profile-image.png" alt="">
+                                            </div>
+                                       
+                                            <p>Vinoth Kumar</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p>-</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>29 Aug 2023</p>
+                                    </td>
+                                    <td>
+                                        <p>-</p>
+                                    </td>
+                                    <td>
+                                        <p>-</p>
+                                    </td>
+                                    <td>
+                                        <p class="fw-500">Rs.5,000.00</p>
+                                    </td>
+                                    <td>
+                                        <div class="badge approved">Approved</div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="image me-2">
+                                                <img class="rounded-5" width="30" height="30" src="../assets/images/profile/profile-image.png" alt="">
+                                            </div>
+                                       
+                                            <p>Vinoth Kumar</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p>-</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- end table -->
+                    </div>
+                </div>
+                <!-- end card -->
+            </div>
         </div>
         <!-- end container -->
       </section>
@@ -575,127 +664,6 @@
     <script src="../assets/js/polyfill.js"></script>
     <script src="../assets/js/main.js"></script>
 
-    <script>
-     
- 
 
-      // =========== chart one start
-      const ctx1 = document.getElementById("Chart1").getContext("2d");
-      const chart1 = new Chart(ctx1, {
-        type: "line",
-        data: {
-          labels: [
-            "Jan",
-            "Feb",
-            "Mar",
-            "Apr",
-            "May",
-            "Jun",
-            "Jul",
-            "Aug",
-            "Sep",
-            "Oct",
-            "Nov",
-            "Dec",
-          ],
-          datasets: [
-            {
-              label: "",
-              backgroundColor: "transparent",
-              borderColor: "#F78D1E",
-              data: [
-                600, 800, 750, 880, 940, 880, 900, 770, 920, 890, 976, 1100,
-              ],
-              pointBackgroundColor: "transparent",
-              pointHoverBackgroundColor: "#F78D1E",
-              pointBorderColor: "transparent",
-              pointHoverBorderColor: "#fff",
-              pointHoverBorderWidth: 5,
-              borderWidth: 5,
-              pointRadius: 8,
-              pointHoverRadius: 8,
-              cubicInterpolationMode: "monotone", // Add this line for curved line
-            },
-          ],
-        },
-        options: {
-          plugins: {
-            tooltip: {
-              callbacks: {
-                labelColor: function (context) {
-                  return {
-                    backgroundColor: "#ffffff",
-                    color: "#171717"
-                  };
-                },
-              },
-              intersect: false,
-              backgroundColor: "#f9f9f9",
-              title: {
-                fontFamily: "Poppins",
-                color: "#8F92A1",
-                fontSize: 12,
-              },
-              body: {
-                fontFamily: "Poppins",
-                color: "#171717",
-                fontStyle: "bold",
-                fontSize: 16,
-              },
-              multiKeyBackground: "transparent",
-              displayColors: false,
-              padding: {
-                x: 30,
-                y: 10,
-              },
-              bodyAlign: "center",
-              titleAlign: "center",
-              titleColor: "#8F92A1",
-              bodyColor: "#171717",
-              bodyFont: {
-                family: "Plus Jakarta Sans",
-                size: "16",
-                weight: "bold",
-              },
-            },
-            legend: {
-              display: false,
-            },
-          },
-          responsive: true,
-          maintainAspectRatio: false,
-          title: {
-            display: false,
-          },
-          scales: {
-            y: {
-              grid: {
-                display: false,
-                drawTicks: false,
-                drawBorder: false,
-              },
-              ticks: {
-                padding: 35,
-                max: 1200,
-                min: 500,
-              },
-            },
-            x: {
-              grid: {
-                drawBorder: false,
-                color: "rgba(143, 146, 161, .1)",
-                zeroLineColor: "rgba(143, 146, 161, .1)",
-              },
-              ticks: {
-                padding: 20,
-              },
-            },
-          },
-        },
-      });
-      // =========== chart one end
-
-    
-    </script>
   </body>
 </html>

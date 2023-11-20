@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="../assets/images/favicon.svg" type="image/x-icon" />
-    <title>Pending Trips - User Dashboard | Emerald TMS</title>
+    <title>Trip Submitted Successfully | Emerald TMS</title>
 
     <!-- ========== All CSS files linkup ========= -->
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
@@ -63,10 +63,10 @@
                     </a>
                     <ul id="ddmenu_1" class="collapse dropdown-nav">
                         <li>
-                            <a href="new-trips.html"> New Trips </a>
+                            <a class="active" href="new-trips.html"> New Trips </a>
                         </li>
                         <li>
-                            <a class="active" href="pending-trips.html"> Pending Trips </a>
+                            <a href="pending-trips.html"> Pending Trips </a>
                         </li>
                         <li>
                             <a href="all-trips.html"> All Trips </a>
@@ -393,25 +393,16 @@
         <section class="section">
             <div class="container-fluid">
                 <!-- ========== title-wrapper start ========== -->
-                <div class="title-wrapper pt-30 mb-4">
-                    <div class="row align-items-center">
+                <div class="title-wrapper pt-30">
+                    <div class="row align-items-center mb-5">
                         <div class="col-12 d-flex justify-content-between flex-wrap">
-                            <div>
-                                <h2>Pending Trips</h2>
+                            <div class="d-flex align-items-center flex-wrap">
+                                <h2 class="me-2">TRIP-00014</h2>
+                                <div class="h5 orange-light-bg-btn">Awaiting Approval</div>
                             </div>
 
                             <div class="right">
-                                <a href="new-trips.html">
-                                <button class="btn btn-orange"><span>
-                                        <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"
-                                            viewBox="0 0 24 24">
-                                            <title>plus-circle</title>
-                                            <path
-                                                d="M17,13H13V17H11V13H7V11H11V7H13V11H17M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z">
-                                            </path>
-                                        </svg>
-                                    </span> New Trip</button>
-                                </a>
+                                <button class="btn custom-white-btn">Recall</button>
                             </div>
                         </div>
 
@@ -423,165 +414,49 @@
 
                 <!-- End Row -->
 
+                <hr>
                 <div class="row">
-
-                    <div class="col-12 mb-5">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-12 mb-4 mb-lg-0 col-lg-3">
-                                        <div class="trips_inner-card">
-                                            <div class="mb-3">Trip-00018</div>
-                                            <div class="mb-3 text-blue">Meeting with prospect (zain pvt.ltd,..)</div>
-                                            <div class="mb-3 badge rejected">REJECTED</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 text-center text-md-start mb-4 col-md-4 col-lg-3 m-md-auto ">
-                                        <div>
-                                            <div>Travel Duration</div>
-                                            <div class="text-black">01  Oct 2023 - 11 Oct 2023</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 text-center text-md-start mb-4 col-md-4 col-lg-3 m-md-auto">
-                                        <div>
-                                            <div>Destination</div>
-                                            <div class="text-black">01  Oct 2023 - 11 Oct 2023</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 text-center mb-4 col-md-4 col-lg-3 m-md-auto ">
-                                        <div >
-                                            <div>Booking Status</div>
-                                            <div class="text-black">-</div>
-                                        </div>
-                                    </div>
-
-
-                                </div>
-                            </div>
-                        </div>
+                    <div class="col-12 col-lg-8 mb-5">
+                        <h5 class="mb-2">Meeting with prospect (Navarathna pvt. Ltd,..)</h5>
+                        <div>Duration: 27 Sept 2023- 21 Oct 2023</div>
 
                     </div>
-
-
-
-                    <div class="col-12 mb-5">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-12 mb-4 mb-lg-0 col-lg-3">
-                                        <div class="trips_inner-card">
-                                            <div class="mb-3">Trip-00018</div>
-                                            <div class="mb-3 text-blue">Meeting with prospect (zain pvt.ltd,..)</div>
-                                            <div class="mb-3 badge approved">Approved</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 text-center text-md-start mb-4 col-md-4 col-lg-3 m-md-auto ">
-                                        <div>
-                                            <div>Travel Duration</div>
-                                            <div class="text-black">01  Oct 2023 - 11 Oct 2023</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 text-center text-md-start mb-4 col-md-4 col-lg-3 m-md-auto">
-                                        <div>
-                                            <div>Destination</div>
-                                            <div class="text-black">01  Oct 2023 - 11 Oct 2023</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 text-center mb-4 col-md-4 col-lg-3 m-md-auto ">
-                                        <div >
-                                            <div>Booking Status</div>
-                                            <div class="text-black">-</div>
-                                        </div>
-                                    </div>
-
-
-                                </div>
+                    <div class="col-12 col-lg-4 gray-bg p-4  mb-5">
+                        <div class="mb-2">Current Approver</div>
+                        <div class="d-flex align-items-center mb-2">
+                            <div class="image me-2">
+                                <img class="rounded-5" width="30" height="30" src="../assets/images/profile/profile-image.png" alt="">
                             </div>
+                       
+                            <p>Vinoth Kumar</p>
                         </div>
 
-                    </div>
+                        <div><a href="#" class="text-blue">View approval flow</a></div>
 
-
-
-                    <div class="col-12 mb-5">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-12 mb-4 mb-lg-0 col-lg-3">
-                                        <div class="trips_inner-card">
-                                            <div class="mb-3">Trip-00018</div>
-                                            <div class="mb-3 text-blue">Meeting with prospect (zain pvt.ltd,..)</div>
-                                            <div class="mb-3 badge recalled">Recalled</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 text-center text-md-start mb-4 col-md-4 col-lg-3 m-md-auto ">
-                                        <div>
-                                            <div>Travel Duration</div>
-                                            <div class="text-black">01  Oct 2023 - 11 Oct 2023</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 text-center text-md-start mb-4 col-md-4 col-lg-3 m-md-auto">
-                                        <div>
-                                            <div>Destination</div>
-                                            <div class="text-black">01  Oct 2023 - 11 Oct 2023</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 text-center mb-4 col-md-4 col-lg-3 m-md-auto ">
-                                        <div >
-                                            <div>Booking Status</div>
-                                            <div class="text-black">-</div>
-                                        </div>
-                                    </div>
-
-
-                                </div>
+                        <div class="mt-5">
+                            <div class="mb-1">Policy
                             </div>
+                            <div class="text-black">Sales</div>
                         </div>
 
-                    </div>
 
-
-
-
-                    <div class="col-12 mb-5">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-12 mb-4 mb-lg-0 col-lg-3">
-                                        <div class="trips_inner-card">
-                                            <div class="mb-3">Trip-00018</div>
-                                            <div class="mb-3 text-blue">Meeting with prospect (zain pvt.ltd,..)</div>
-                                            <div class="mb-3 badge awaiting-approval">AWAITING APPROVAL</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 text-center text-md-start mb-4 col-md-4 col-lg-3 m-md-auto ">
-                                        <div>
-                                            <div>Travel Duration</div>
-                                            <div class="text-black">01  Oct 2023 - 11 Oct 2023</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 text-center text-md-start mb-4 col-md-4 col-lg-3 m-md-auto">
-                                        <div>
-                                            <div>Destination</div>
-                                            <div class="text-black">01  Oct 2023 - 11 Oct 2023</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 text-center mb-4 col-md-4 col-lg-3 m-md-auto ">
-                                        <div >
-                                            <div>Booking Status</div>
-                                            <div class="text-black">-</div>
-                                        </div>
-                                    </div>
-
-
-                                </div>
+                        <div class="mt-4">
+                            <div class="mb-1">Destination
                             </div>
+                            <div class="text-black">London</div>
+                        </div>
+
+
+
+                        <div class="mt-4">
+                            <div class="mb-1">Business Purpose
+                            </div>
+                            <div class="text-black">-</div>
                         </div>
 
                     </div>
 
                 </div>
-
 
 
             </div>
@@ -623,10 +498,6 @@
     <script src="../assets/js/world-merc.js"></script>
     <script src="../assets/js/polyfill.js"></script>
     <script src="../assets/js/main.js"></script>
-
-
-
-
 
 
 </body>

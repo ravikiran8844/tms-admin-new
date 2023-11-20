@@ -466,3 +466,86 @@ padding:15px;
     padding:15px;
     }
 
+.trips_inner-card{
+    border-radius: 5px;
+    border-bottom: 1px solid #ECECEC;
+    background: #F1F2F6;
+    text-align: center;
+    padding: 20px 8px;
+}
+.text-blue{
+    color: #408DFB !important;
+}
+
+.rejected{
+    border-radius: 3.429px;
+background: #FBEDEF;
+color: #D9716D;
+text-align: center;
+font-family: Poppins;
+font-size: 10.286px;
+font-style: normal;
+font-weight: 500;
+line-height: 100%; /* 10.286px */
+letter-spacing: 0.566px;
+text-transform: uppercase;
+}
+
+.approved{
+    color: #6CB08A;
+text-align: center;
+font-family: Poppins;
+font-size: 10.286px;
+font-style: normal;
+font-weight: 500;
+line-height: 100%; /* 10.286px */
+letter-spacing: 0.566px;
+text-transform: uppercase;
+border-radius: 3.429px;
+background: #E1F8F0;
+}
+
+.recalled{
+    color: #676767;
+text-align: center;
+font-family: Poppins;
+font-size: 10.286px;
+font-style: normal;
+font-weight: 500;
+line-height: 100%; /* 10.286px */
+letter-spacing: 0.566px;
+text-transform: uppercase;
+border-radius: 3.429px;
+background: #DFDFDF;
+}
+
+
+.awaiting-approval{
+    color: #F78D1E;
+text-align: center;
+font-family: Poppins;
+font-size: 10.286px;
+font-style: normal;
+font-weight: 500;
+line-height: 100%; /* 10.286px */
+letter-spacing: 0.566px;
+text-transform: uppercase;
+border-radius: 3.429px;
+background: #FEF4E8;
+}
+
+.custom-outline-btn{
+    border-radius: 6px !important;
+border: 1px solid #E3E3E3 !important;
+background: #FFF !important; 
+color: #898989 !important;
+padding: 8px 20px;
+text-align: center;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin: 10px;
+margin-left: 0;
+}

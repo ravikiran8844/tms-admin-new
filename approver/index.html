@@ -4,17 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon" />
-    <title>Dashboard | Emerald TMS</title>
+    <link rel="shortcut icon" href="../assets/images/favicon.svg" type="image/x-icon" />
+    <title>Approver Dashboard | Emerald TMS</title>
 
     <!-- ========== All CSS files linkup ========= -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/lineicons.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="assets/css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="assets/css/fullcalendar.css" />
-    <link rel="stylesheet" href="assets/css/fullcalendar.css" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="assets/css/custom.css" />
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css/lineicons.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../assets/css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../assets/css/fullcalendar.css" />
+    <link rel="stylesheet" href="../assets/css/fullcalendar.css" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="../assets/css/custom.css" />
 
   </head>
   <body>
@@ -28,7 +28,7 @@
     <aside class="sidebar-nav-wrapper">
       <div class="navbar-logo">
         <a href="index.html">
-          <img src="assets/images/logo/logo.svg" alt="logo" />
+          <img src="../assets/images/logo/logo.svg" alt="logo" />
         </a>
       </div>
       <nav class="sidebar-nav">
@@ -57,20 +57,48 @@
                 <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>text-box-check-outline</title><path d="M17,21L14.25,18L15.41,16.84L17,18.43L20.59,14.84L21.75,16.25M12.8,21H5C3.89,21 3,20.11 3,19V5C3,3.89 3.89,3 5,3H19C20.11,3 21,3.89 21,5V12.8C20.39,12.45 19.72,12.2 19,12.08V5H5V19H12.08C12.2,19.72 12.45,20.39 12.8,21M12,17H7V15H12M14.68,13H7V11H17V12.08C16.15,12.22 15.37,12.54 14.68,13M17,9H7V7H17" /></svg>
 
               </span>
-              <span class="text">Approvals</span>
+              <span class="text">Trips</span>
             </a>
             <ul id="ddmenu_1" class="collapse dropdown-nav">
               <li>
-                <a href="awaiting-approval.html"> Awaiting Approval </a>
+                <a href="new-trips.html"> New Trips </a>
               </li>
               <li>
-                <a href="pending-approval.html"> Pending Approval </a>
+                <a href="pending-trips.html"> Pending Trips </a>
               </li>
               <li>
                 <a href="all-trips.html"> All Trips </a>
               </li>
+            </ul>
+          </li>
+
+
+
+          <li class="nav-item nav-item-has-children">
+            <a
+              href="#0"
+              class="collapsed"
+              data-bs-toggle="collapse"
+              data-bs-target="#ddmenu_2"
+              aria-controls="ddmenu_2"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="icon">
+                <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>text-box-check-outline</title><path d="M17,21L14.25,18L15.41,16.84L17,18.43L20.59,14.84L21.75,16.25M12.8,21H5C3.89,21 3,20.11 3,19V5C3,3.89 3.89,3 5,3H19C20.11,3 21,3.89 21,5V12.8C20.39,12.45 19.72,12.2 19,12.08V5H5V19H12.08C12.2,19.72 12.45,20.39 12.8,21M12,17H7V15H12M14.68,13H7V11H17V12.08C16.15,12.22 15.37,12.54 14.68,13M17,9H7V7H17" /></svg>
+
+              </span>
+              <span class="text">Expenses</span>
+            </a>
+            <ul id="ddmenu_2" class="collapse dropdown-nav">
               <li>
-                <a href="approval-reports.html"> Reports </a>
+                <a href="unreported-expenses.html"> Unreported Expenses </a>
+              </li>
+              <li>
+                <a href="all-expenses.html"> All Expenses </a>
+              </li>
+              <li>
+                <a href="bulk-add-expenses.html"> Bulk Add Expenses </a>
               </li>
             </ul>
           </li>
@@ -88,22 +116,45 @@
           </li>
 
 
-          <li class="nav-item ">
-            <a href="advances.html">
+          <li class="nav-item nav-item-has-children">
+            <a
+              href="#0"
+              class="collapsed"
+              data-bs-toggle="collapse"
+              data-bs-target="#ddmenu_3"
+              aria-controls="ddmenu_3"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
               <span class="icon">
-                <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>wallet-outline</title><path d="M5,3C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V16.72C21.59,16.37 22,15.74 22,15V9C22,8.26 21.59,7.63 21,7.28V5A2,2 0 0,0 19,3H5M5,5H19V7H13A2,2 0 0,0 11,9V15A2,2 0 0,0 13,17H19V19H5V5M13,9H20V15H13V9M16,10.5A1.5,1.5 0 0,0 14.5,12A1.5,1.5 0 0,0 16,13.5A1.5,1.5 0 0,0 17.5,12A1.5,1.5 0 0,0 16,10.5Z" /></svg>
+                <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>text-box-check-outline</title><path d="M17,21L14.25,18L15.41,16.84L17,18.43L20.59,14.84L21.75,16.25M12.8,21H5C3.89,21 3,20.11 3,19V5C3,3.89 3.89,3 5,3H19C20.11,3 21,3.89 21,5V12.8C20.39,12.45 19.72,12.2 19,12.08V5H5V19H12.08C12.2,19.72 12.45,20.39 12.8,21M12,17H7V15H12M14.68,13H7V11H17V12.08C16.15,12.22 15.37,12.54 14.68,13M17,9H7V7H17" /></svg>
+
               </span>
               <span class="text">Advances</span>
             </a>
+            <ul id="ddmenu_3" class="collapse dropdown-nav">
+              <li>
+                <a href="all-advance.html"> All Advance </a>
+              </li>
+              <li>
+                <a href="pending-advances.html"> Pending Advances </a>
+              </li>
+              <li>
+                <a href="request-advance.html"> Request Advance </a>
+              </li>
+            </ul>
           </li>
 
 
+       
           <li class="nav-item ">
-            <a href="analytics.html">
+            <a href="reports.html">
               <span class="icon">
-                <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>chart-box-outline</title><path d="M9 17H7V10H9V17M13 17H11V7H13V17M17 17H15V13H17V17M19 19H5V5H19V19.1M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3Z" /></svg>
-              </span>
-              <span class="text">Analytics</span>
+                <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>file-chart</title><path d="M13,9H18.5L13,3.5V9M6,2H14L20,8V20A2,2 0 0,1 18,22H6C4.89,22 4,21.1 4,20V4C4,2.89 4.89,2 6,2M7,20H9V14H7V20M11,20H13V12H11V20M15,20H17V16H15V20Z" /></svg>
+
+             </span>
+
+              <span class="text">Approvals</span>
             </a>
           </li>
 
@@ -167,7 +218,7 @@
                     <li>
                       <a href="#0">
                         <div class="image">
-                          <img src="assets/images/lead/lead-5.png" alt="" />
+                          <img src="../assets/images/lead/lead-5.png" alt="" />
                         </div>
                         <div class="content">
                           <h6>Jacob Jones</h6>
@@ -179,7 +230,7 @@
                     <li>
                       <a href="#0">
                         <div class="image">
-                          <img src="assets/images/lead/lead-3.png" alt="" />
+                          <img src="../assets/images/lead/lead-3.png" alt="" />
                         </div>
                         <div class="content">
                           <h6>John Doe</h6>
@@ -191,7 +242,7 @@
                     <li>
                       <a href="#0">
                         <div class="image">
-                          <img src="assets/images/lead/lead-2.png" alt="" />
+                          <img src="../assets/images/lead/lead-2.png" alt="" />
                         </div>
                         <div class="content">
                           <h6>Anee Lee</h6>
@@ -217,7 +268,7 @@
                     <li>
                       <a href="#0">
                         <div class="image">
-                          <img src="assets/images/lead/lead-6.png" alt="" />
+                          <img src="../assets/images/lead/lead-6.png" alt="" />
                         </div>
                         <div class="content">
                           <h6>
@@ -237,7 +288,7 @@
                     <li>
                       <a href="#0">
                         <div class="image">
-                          <img src="assets/images/lead/lead-1.png" alt="" />
+                          <img src="../assets/images/lead/lead-1.png" alt="" />
                         </div>
                         <div class="content">
                           <h6>
@@ -274,7 +325,7 @@
                     <div class="profile-info">
                       <div class="info">
                         <div class="image">
-                          <img src="assets/images/profile/profile-image.png" alt="" />
+                          <img src="../assets/images/profile/profile-image.png" alt="" />
                         </div>
                         <div>
                           <h6 class="fw-semibold">Vishnu prasath</h6>
@@ -287,7 +338,7 @@
                     <li>
                       <div class="author-info flex items-center !p-1">
                         <div class="image">
-                          <img src="assets/images/profile/profile-image.png" alt="image">
+                          <img src="../assets/images/profile/profile-image.png" alt="image">
                         </div>
                         <div class="content">
                           <h4 class="text-sm">Vishnu prasath</h4>
@@ -332,10 +383,24 @@
           <!-- ========== title-wrapper start ========== -->
           <div class="title-wrapper pt-30">
             <div class="row align-items-center">
-              <div class="col-12">
+              <div class="col-12 d-flex justify-content-between flex-wrap">
                 <div class="title">
                   <h2>Dashboard</h2>
                 </div>
+
+                <div class="right">
+                    <div class="select-style-1">
+                      <div class="select-position select-sm">
+                        <select class="light-bg">
+                          <option value="">Last Year</option>
+                          <option value="">This Year</option>
+                          <option value="">Last Week</option>
+                          <option value="">This Week</option>
+                        </select>
+                      </div>
+                    </div>
+                    <!-- end select -->
+                  </div>
               </div>
              
               <!-- end col -->
@@ -392,7 +457,7 @@
                 <div class="card-body">
                   <h6 class="mb-10">No. of Expenses</h6>
                   <div class="d-flex justify-content-between align-items-center">
-                    <h3 class="text-bold mb-10">₹120</h3>
+                    <h3 class="text-bold mb-10">120</h3>
                     <div class="icon icon-3--bg">
                       <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>receipt-text</title><path d="M3,22L4.5,20.5L6,22L7.5,20.5L9,22L10.5,20.5L12,22L13.5,20.5L15,22L16.5,20.5L18,22L19.5,20.5L21,22V2L19.5,3.5L18,2L16.5,3.5L15,2L13.5,3.5L12,2L10.5,3.5L9,2L7.5,3.5L6,2L4.5,3.5L3,2M18,9H6V7H18M18,13H6V11H18M18,17H6V15H18V17Z" /></svg>                    </div>
                   </div>
@@ -510,15 +575,15 @@
     <!-- ======== main-wrapper end =========== -->
 
     <!-- ========= All Javascript files linkup ======== -->
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/Chart.min.js"></script>
-    <script src="assets/js/dynamic-pie-chart.js"></script>
-    <script src="assets/js/moment.min.js"></script>
-    <script src="assets/js/fullcalendar.js"></script>
-    <script src="assets/js/jvectormap.min.js"></script>
-    <script src="assets/js/world-merc.js"></script>
-    <script src="assets/js/polyfill.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/Chart.min.js"></script>
+    <script src="../assets/js/dynamic-pie-chart.js"></script>
+    <script src="../assets/js/moment.min.js"></script>
+    <script src="../assets/js/fullcalendar.js"></script>
+    <script src="../assets/js/jvectormap.min.js"></script>
+    <script src="../assets/js/world-merc.js"></script>
+    <script src="../assets/js/polyfill.js"></script>
+    <script src="../assets/js/main.js"></script>
 
     <script>
      

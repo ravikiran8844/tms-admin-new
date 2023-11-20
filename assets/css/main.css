@@ -3771,7 +3771,7 @@ h6,
   transform: rotate(0deg);
 }
 .sidebar-nav-wrapper .sidebar-nav ul .nav-item.nav-item-has-children ul {
-  padding: 10px 24px 40px 57px;
+  padding: 10px 10px 40px 57px;
 }
 .sidebar-nav-wrapper .sidebar-nav ul .nav-item.nav-item-has-children ul li {
   margin-bottom: 12px;
@@ -3780,7 +3780,7 @@ h6,
   margin-bottom: 0px;
 }
 .sidebar-nav-wrapper .sidebar-nav ul .nav-item.nav-item-has-children ul li a {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 500;
   padding: 0;
   display: flex;

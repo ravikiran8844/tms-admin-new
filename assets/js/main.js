@@ -51,3 +51,8 @@
     mainWrapper.classList.remove("active");
   });
 })();
+
+
+
+
+document.getElementById("current-year").textContent = new Date().getFullYear();

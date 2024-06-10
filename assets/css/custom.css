@@ -754,7 +754,7 @@ cursor: pointer;
   border-radius: 20.5px 0px 0px 20.5px;
 border: 1px solid #DEDEDE;
 background: #F1F2F6;
-padding: 5px;
+padding: 5px 10px;
 border-right: none;
 
 }
@@ -805,7 +805,11 @@ text-transform: uppercase;
 }
 
 
-
+.btn-outline{
+  border: 1px solid #CECECE !important;
+  border-radius: 4px !important;
+  background-color: transparent !important;
+}
 
 /* Scrollbar Styling */
 ::-webkit-scrollbar {
@@ -822,4 +826,72 @@ text-transform: uppercase;
   -webkit-border-radius: 10px;
   border-radius: 10px;
   background: #b7b5b5; 
+}
+
+
+
+.badge.unsubmitted{
+  background: #6868681A;
+  color: #676767;
+}
+
+table input[type="checkbox"]{
+  border: 1px solid #CECECE;
+  width: 23px;
+  height: 23px;
+  border-radius: 4px;
+  accent-color: #f78d1e;
+}
+
+
+table th,table td,table h6{
+  color: #9C9C9C;
+}
+
+.filter-card_wrapper{
+  background: #ECECEC; padding: 10px 20px;
+}
+
+.filter-card_wrapper .select_box{
+  display: flex;
+    gap: 5px;
+    border: 1px solid #DEDEDE;
+    border-radius: 20px;
+    background: #F1F2F6;
+}
+
+.filter-card_wrapper select{
+  height: 100%;
+  width: 200px;
+  border-radius: 0px 20px 20px 0px;
+  border: none;
+  outline: none;
+}
+
+.filter-card_wrapper label{
+  border-radius: 20.5px 0px 0px 20.5px;
+  border-right: 1px solid #DEDEDE;
+  background: #F1F2F6;
+  padding: 5px 10px;
+  border-right: none;
+}
+.filter-card_wrapper .filter-icon{
+  background: #3D3D3D;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-warning{
+background-color: #F78D1E !important;
+}
+
+.awaiting-approval{
+    text-transform: uppercase;
+    background: #F78D1E1A;
+    color: #F78D1E;
+
 }

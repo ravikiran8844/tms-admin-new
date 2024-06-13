@@ -994,3 +994,30 @@ font-size: 10px;
   background: #F1F2F6;
 }
 
+
+
+#custom-tab button{
+  border: 1px solid #ECECEC;
+  background: #fff;
+  padding: 20px;
+  color: #000;
+}
+
+#custom-tab button.active{
+  background: #FBFBFB;
+}
+
+.all-advaces-item-details-card_wrapper{
+  border-radius: 5px;
+border: 1px solid #E1E1E1;
+background: #FFF;
+}
+.all-advaces-item-details-card_price-block{
+  border-radius: 5px;
+    border: 1px solid #E1E1E1;
+    background: #F1F2F6;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
